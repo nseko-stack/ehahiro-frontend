@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/eHAHIRO-logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#059669" />
+    <meta
+      name="description"
+      content="AgriPrice - Real-time crop price tracking across Rwanda markets with instant alerts"
+    />
+
+    <title>AgriPrice - Rwanda Crop Market Tracker</title>
+
+    <!-- Tailwind CDN (ok for now, but not production ideal) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                50: "#f0fdf4",
+                500: "#22c55e",
+                600: "#16a34a",
+                700: "#15803d",
+              },
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+
+    <!-- ✅ THIS is what Vite needs -->
+    <script type="module" src="/src/main.jsx"></script>
+
+  </body>
+</html>
